@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>拼啦α版-总有惊喜在身边</title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/flat-ui.css">
+        <!-- Using only with Flat-UI (free)-->
+        <link rel="stylesheet" href="css/icon-font.css">
+        <!-- end -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pinla.css">
+    </head>
+
+    <body>
+        
+        <div class="page-wrapper">
+            <!-- header-13 -->
+            <header class="header-13">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-11 col-sm-offset-1">
+                            <a class="brand" href="http://10lab.in/pinla.html"><img src="img/app-logo-α@2x.png" width="100" height="100" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="header-13-sub v-center">
+                <div>
+                    <div class="background">&nbsp;</div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <h3>拼啦-总有惊喜在身边</h3>
+                                <p class="lead">“拼啦”是一款基于地理位置的移动互联网产品。不仅为用户提供实用有趣的惊喜内容，更为用户提供一种引领潮流的时尚生活方式。</p> <br>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <a class="btn btn-block btn-lg btn-info" href="itms-services://?action=download-manifest&url=https://download.pinla.today/PinLa-IOS-1.2.2.plist"><i class="iconfont icon-apple">&#xe606;</i>下载 拼啦α版</a>
+                                    </div>
+                                </div>
+                                <p class="small">*Alpha版：此版本现阶段主要是以实现功能为主，只在开发者内部交流，该版本Bug较多，持续修改中。</p>
+                            </div>
+                            <div class="col-sm-4 col-sm-offset-1">
+                                <img src="img/Slice@2x.png" class="hidden-xs" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- footer-12 -->
+            <footer class="footer-12">
+                <div class="container">
+                    Made with <span class="fui-heart"> </span> in 10Lab
+                </div>
+            </footer>
+
+        <!-- footer-11 -->
+        <footer class="footer-11">
+            <div class="container">
+				<div class="social-links"><a href="http://weibo.com/p/1006065592647738" target="_blank"><i class="iconfont icon-sina">&#xe600;</i></a><a href="#wechat-dialog" type="button" data-toggle="modal" data-target="#wechat-dialog"><i class="iconfont icon-wechat">&#xe602;</i></a><a href="https://www.facebook.com/10labin" target="_blank"><i class="iconfont icon-facebook">&#xe604;</i></a><a href="" target="_blank"><i class="iconfont icon-twitter">&#xe601;</i></a><a href="http://www.linkedin.com/company/10lab" target="_blank"><i class="iconfont icon-linkedin">&#xe603;</i></a>
+
+			<p class="lead"><b>念念不忘 必有回响</b></p></div>
+			<nav><a class="fui-home" href="http://10lab.in"></a><a href="http://10lab.in/about.html#contacts">合作机会</a><a href="http://10lab.in/hire.html">加入我们</a><p class="copy">&copy; 2015 10Lab. All Rights Reserved.</p></nav>
+            </div>
+        </footer>
+        </div>
+
+<!-- WeChat dialog -->
+<div class="modal fade" id="wechat-dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="dialog wechat-dialog">
+	    <div class="dialog-overlay"></div>
+	    <div class="dialog-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      <img class="dialog-qrcode" src="img/pinla-weichat-qrcode.jpg">
+	      <p class="mobile-hide">手机扫描二维码或在<br/>微信搜索“pinlatoday”<br>关注拼啦微信公众号</p>
+	      <div class="btn btn-block btn-lg btn-success"  data-dismiss="modal" aria-label="Close">确定</div>
+	    </div>
+  </div>
+</div>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+        <script src="js/jquery.parallax.min.js"></script>
+        <script src="js/startup-kit.js"></script>
+        <script src="js/script.js"></script>
+
+
+
+	<script type="text/javascript">
+		function is_weixin() {
+		    var ua = navigator.userAgent.toLowerCase();
+		    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+		        return true;
+		    } else {
+		        return false;
+		    }
+		}
+		var isWeixin = is_weixin();
+		var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+		function loadHtml(){
+			var div = document.createElement('div');
+			div.id = 'weixin-tip';
+			div.innerHTML = '<p>微信打开时，请点击右上角按钮，<br/>用浏览器打开再下载安装。</p>';
+			document.body.appendChild(div);
+		}
+		
+		function loadStyleText(cssText) {
+	        var style = document.createElement('style');
+	        style.rel = 'stylesheet';
+	        style.type = 'text/css';
+	        try {
+	            style.appendChild(document.createTextNode(cssText));
+	        } catch (e) {
+	            style.styleSheet.cssText = cssText; //ie9以下
+	        }
+            var head=document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+            head.appendChild(style); 
+	    }
+	    var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;background-image: url('../img/weixintip.png');background-repeat: no-repeat;background-position: right 5px;} #weixin-tip p{text-align: left; margin-top: 10%; padding:45px 10%; color:#fff;}";
+		if(isWeixin){
+			loadHtml();
+			loadStyleText(cssText);
+		}
+	</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61506074-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
